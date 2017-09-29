@@ -1,0 +1,94 @@
+h1
+{
+    font-size: 20px;
+    font-family: arial ;
+    font-weight: lighter;
+}
+
+div#div1
+{
+    background-color:aliceblue;
+    width:300px;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 25px;
+    margin-left: 10;
+
+}
+
+div#div2
+{
+    background-color:aliceblue;
+    width:250px;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 25px;
+    margin-left: 10;
+    rgb(169,204,227)
+
+
+
+}
+
+td#numbers
+{
+  padding-left: 40px;
+  padding-right: 50px;
+
+}
+
+td#letter1
+{
+  padding-left: 25px;
+  padding-bottom: 10;
+  width: 50px;
+  font-family: times;
+  text-align: left;
+
+}
+
+td#letters2
+{
+  padding-left: 25px;
+  width: 50px;
+  font-family: times;
+  padding-bottom: 5px;
+
+}
+
+td#table
+{
+  background-color:lightblue;
+  width: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+td#t2
+{
+  background-color:lightblue;
+  width: 300px;
+
+}
+
+td#count
+{
+  text-align:center;
+  vertical-align: center;
+  color:red;
+  padding-left: 40px
+}
+
+input
+{
+  width: 70px;
+  height: 25;
+  text-alight:center;
+}
+
+form
+{
+  padding-top: 8;
+  height: 20;
+}

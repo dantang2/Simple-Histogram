@@ -1,0 +1,199 @@
+<html>
+
+<head>
+  <title>My Histogram Generator</title>
+  <link rel="stylesheet" type="text/css" href="histogram.css" />
+  <script src = "calculate.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Histogram Generator</h1>
+  <br/>
+
+
+      <div id="div1">
+        <h2 style="color:red; text-align:left;
+                    padding-left:10px;font-size:20;">Lower bounds</h2>
+
+        <table>
+          <tr>
+            <td id="letter1">Max</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "0" value="100" style="text-align:center";>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td id="letter1">A+</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "1" value="95" style="text-align:center";>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td id="letter1">A</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "2" value="90" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">A-</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "3" value="85" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">B+</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "4" value="80" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">B</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "5" value="75" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">B-</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "6" value="70" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">C+</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "7" value="65" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">C</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "8" value="60" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">C-</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "9" value="55" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">D</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "10" value="50" style="text-align:center";>
+              </form>
+          </tr>
+
+          <tr>
+            <td id="letter1">F</td>
+            <td id="numbers">
+              <form onkeypress="checkEnter(event)";>
+                <input type="text" name = "11" value="0" style="text-align:center";>
+              </form>
+          </tr>
+        </table>
+      </div>
+
+      <div id="div2">
+        <h2 style="color:red; text-align:left;
+                  padding-left:10px;font-size:20">Histogram</h2>
+        <table style="height: 200px;">
+          <tr>
+            <td id="letters2">A+</td>
+            <td id="count"><p id="A+"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">A</td>
+            <td id="count"><p id="A"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">A-</td>
+            <td id="count"><p id="A-"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">B+</td>
+            <td id="count"><p id="B+"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">B</td>
+            <td id="count"><p id="B"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">B-</td>
+            <td id="count"><p id="B-"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">C+</td>
+            <td id="count"><p id="C+"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">C</td>
+            <td id="count"><p id="C"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">C-</td>
+            <td id="count"><p id="C-"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">D</td>
+            <td id="count"><p id="D"></p></td>
+          </tr>
+          <tr>
+            <td id="letters2">F</td>
+            <td id="count"><p id="F"></p></td>
+          </tr>
+        </table>
+      </div>
+
+      <script>
+        document.getElementById('A+').innerHTML = counter[0]
+        document.getElementById('A').innerHTML = counter[1]
+        document.getElementById('A-').innerHTML = counter[2]
+        document.getElementById('B+').innerHTML = counter[3]
+        document.getElementById('B').innerHTML = counter[4]
+        document.getElementById('B-').innerHTML = counter[5]
+        document.getElementById('C+').innerHTML = counter[6]
+        document.getElementById('C').innerHTML = counter[7]
+        document.getElementById('C-').innerHTML = counter[8]
+        document.getElementById('D').innerHTML = counter[9]
+        document.getElementById('F').innerHTML = counter[10]
+      </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
